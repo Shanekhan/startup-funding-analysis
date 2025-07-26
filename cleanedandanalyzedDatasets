@@ -1,0 +1,6 @@
+# Cleaned & Analyzed Datasets
+
+This folder includes the cleaned and processed versions of the startup dataset used in analysis:
+
+- `cleaned_dataset.csv`: Fully cleaned data (standardized industries, funding, countries)
+- `analyzed_output.csv`: Aggregated and filtered insights for visualization
