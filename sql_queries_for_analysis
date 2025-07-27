@@ -1,0 +1,52 @@
+-- 🔍 1. Startup Formation Over Time (2000–2022)
+SELECT 
+  founded_year, 
+  COUNT(*) AS startup_count
+FROM 
+  `your_dataset.global_startup_success`
+WHERE 
+  founded_year BETWEEN 2000 AND 2022
+GROUP BY 
+  founded_year
+ORDER BY 
+  founded_year;
+
+
+-- 🌍 2. Top 10 Countries by Startup Count
+SELECT 
+  country, 
+  COUNT(*) AS startup_count
+FROM 
+  `your_dataset.global_startup_success`
+GROUP BY 
+  country
+ORDER BY 
+  startup_count DESC
+LIMIT 10;
+
+
+-- 🏢 3. Funding Stage Popularity
+SELECT 
+  funding_type AS funding_stage,
+  COUNT(*) AS num_startups
+FROM 
+  `your_dataset.global_startup_success`
+GROUP BY 
+  funding_stage
+ORDER BY 
+  num_startups DESC;
+
+
+-- 💰 4. Average Funding by Stage
+SELECT 
+  funding_type AS funding_stage,
+  ROUND(AVG(funding_amount), 2) AS avg_funding
+FROM 
+  `your_dataset.global_startup_success`
+WHERE 
+  funding_amount IS NOT NULL
+GROUP BY 
+  funding_stage
+ORDER BY 
+  avg_funding DESC;
+
