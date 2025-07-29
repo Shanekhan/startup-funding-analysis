@@ -12,7 +12,7 @@ This project follows the **Google Data Analytics 6-Phase Framework** to explore 
 - 📊 Cleaned dataset and transformed data in `/global-startup-trends/`
 - 💻 SQL queries used for analysis in `/sqlqueriesforanalyzation/`
 - 📈 Final project charts and visualizations in `/project/`
-- 🧾 Project report (with visual storytelling) — **presentation coming soon** via Google Slides or PowerPoint
+  
 
 ---
 
